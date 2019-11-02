@@ -118,6 +118,13 @@ section{
     white-space: pre-line;
     margin-right: 80px;
 }
+
+.contentMarginAdjustMobile{
+    margin-left: 40px;
+    white-space: pre-line;
+    margin-right: 40px;
+    font-size: 14px;
+}
 #practiceAreaIntro{
     padding-top: 20px;
     padding-bottom: 20px;;

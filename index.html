@@ -67,7 +67,10 @@
                 data-center="background-position: 50% -100px;"
                 data-top-bottom="background-position: 50% -300px;" 
                 data-anchor-target="#header">
-                <div class="container-fluid">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-md-12"></div>
+                    </div>
                 <!-- <div class="" id="landingQuote">
                     Defending individuals charged with 
                         any offence at trial and on appeal
@@ -99,7 +102,7 @@
                         <h1 class="contentMarginAdjust">The Firm</h1>
                     </div>
                     <div class="titleStyle"></div>
-                    <div class="row" id="firmContent">
+                    <div class="row mr-0" id="firmContent">
 
                         <div class="col-md-4 contentMarginAdjust" id="theFirmContent">
                             Lee Sela is a criminal defence lawyer practicing in Toronto, GTA and surrounding areas. She defends people charged with criminal and regulatory offences at trial and on appeal. Lee advocates for people charged with any offence, including fraud, drugs or firearm offences, domestic assault, sexual assault, child pornography, attempted murder and homicides.
@@ -124,10 +127,10 @@
                 <div class="container-fluid p-0">
                     <h1 class="contentMarginAdjust" id="practiceTitle">Practice Areas</h1>
                     <div class="titleStyle"></div>
-                        <div class="row">
-                        <div class="col-12" id="practiceAreaIntro"> Lee advocates for people charged with any offence, including: </div>
+                        <div class="row mr-0">
+                        <div class="col-12 pr-0" id="practiceAreaIntro"> Lee advocates for people charged with any offence, including: </div>
                         <br>    
-                        <div class="practiceAreaContent col-12">
+                        <div class="practiceAreaContent col-12 mr-0 pr-0">
                          <div class="practiceAreaBox "> Fraud
                             </div>
                          <div class="practiceAreaBox "> Drugs
@@ -154,7 +157,7 @@
                 <div class="container-fluid p-0">
                     <h1 class="contentMarginAdjust">Fees</h1>
                     <div class="titleStyle"></div>
-                        <div class="row">
+                        <div class="row mr-0">
                             <div class="col-md-5 contentMarginAdjust" id="feesContent">Lee believes in access to justice and not crippling you financially in your time of need. 
                     
                             Lee offers a free 20 minute consultation, welcomes discussions of your personal circumstances, and may agree to a personalized payment plan.  
@@ -176,8 +179,8 @@
                     <h1 class="contentMarginAdjust">Contact</h1>
                     <div class="titleStyle"></div>
     
-                        <div class="row contentMarginAdjust" id="mapAndContent">
-                            <div class="col-md-6" id="contactInformation">
+                        <div class="row contentMarginAdjust mr-0 " id="mapAndContent">
+                            <div class="col-md-6 pr-0" id="contactInformation">
 
                                 <div>Lee Sela, Criminal Defence Lawyer</div> 
                                 <div id="leeTitle"></div>
@@ -227,12 +230,14 @@
         if (s.isMobile()) {
             s.destroy();
             $("#header").css('background-position', '50% 50%');
-            $("#navbar-site").addClass('navbar navbar-dark fixed-top navbar-expand-lg bgcol').css('width', '96%');
+            $("#navbar-site").addClass('navbar navbar-dark fixed-top navbar-expand-lg bgcol');
             $("#home").addClass('navbar-brand ml-5 mt-2 effect smallLeftLogo');
             $("#logo").addClass('logoChange');
             $("#leeTitle").hide();
             $("#contactInformation").css('font-size', '16px');
             $('#mapAndContent').removeClass('contentMarginAdjust');
+            $('#theFirmContent').removeClass('contentMarginAdjust').addClass('contentMarginAdjustMobile');
+            $('#googleMap').addClass('pr-0');
 
 
         }
