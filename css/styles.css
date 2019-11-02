@@ -1,0 +1,231 @@
+html,body {
+  height:100%;
+  font-family: 'Roboto Slab', serif;
+}
+
+#logo{
+    width: 65%;
+}
+.logoChange{
+    width: 65%;
+    content:url("../img/logoWhite.png");
+}
+
+#header {
+    height:84vh;
+    min-height:400px;
+    background-size:cover;
+    background-image:url("../img/IMG_0729.jpeg");
+    background-attachment: fixed;
+}
+
+#firmContent {
+   
+    background-size:cover;
+    background-position: center center;
+    background-image:url("../img/toronto_edited.jpg");
+    background-attachment: fixed;
+    
+}
+
+.titleStyle{
+    height: 2px;
+    min-height:1px;
+    background-color: rgb(78, 65, 20);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* color: white; */
+    /* background-size:cover; */
+ 
+  }
+
+.navbar-nav a.nav-item.nav-link{
+    font-weight: 400;
+}
+
+h2{  
+    padding-left: 110px;
+    padding-right: 110px;
+}
+.quoteStyle{
+    height:auto;
+    min-height: 16vh;
+    background-color:rgb(30, 23, 37);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size:cover;
+    margin-bottom: 5vh;
+    font-size: 28px;
+    text-align: center;
+  }
+
+@media only screen and (max-width: 1200px) {
+  #logos img{
+    margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .effect {
+        text-align: center;
+        /* Position and Left to offset the Logo to be exactly centered. Compensating for collapse button*/
+        position: relative;
+        left: 36px; 
+        margin:auto !important;     
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .smallLeftLogo{
+        width: 78% !important;
+        text-align: center;
+        position: relative;
+        left: 36px; 
+        margin:auto !important;    
+    }
+}
+
+#navbar-site{
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.bgcol{
+    background-color:rgb(30, 23, 37);
+}
+
+section{
+    background-color: white;
+    padding-left:110px;
+    padding-right:110px;
+}
+
+/*Extra margin space to align titles and content with logo*/
+.contentMarginAdjust{
+    margin-left: 80px;
+    white-space: pre-line;
+    margin-right: 80px;
+}
+#practiceAreaIntro{
+    padding-top: 20px;
+    padding-bottom: 20px;;
+    text-align: center;
+    font-size:1.2em;
+    color: rgb(207, 204, 204);
+}
+
+.practiceAreaContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(207, 204, 204);
+
+}
+
+.practiceAreaBox{
+    height:50px;
+    min-width: 250px;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    border: solid;
+    border-color: rgb(78, 65, 20);
+    border-width: 1px;
+    text-align: center;
+}
+
+#landingQuote{
+    position: absolute;
+    font-size: 26px;
+    top: 300px;
+    right: 70px;
+    white-space: pre-wrap;
+}
+
+#practiceAreas{
+    padding-top: 30px;
+    background-color: rgb(30, 23, 37);
+    padding-bottom: 20px;
+}
+
+#practiceTitle{
+    padding-top: 10px;
+    color: rgb(192, 189, 189);
+}
+
+#mainQuote{
+    text-shadow: 1px 1px 4px grey;
+    padding-top: 15px;
+}
+
+#theFirmContent{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.925);
+}
+
+#fees{
+    padding-top: 40px;
+   
+}
+#feesContent{
+    padding-top: 50px;
+    padding-bottom: 50px; 
+   
+}
+
+#contact{
+    background-color: rgb(30, 23, 37);
+    padding-top: 40px;
+    color: rgb(192, 189, 189);
+}
+
+#contactInformation{
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+#contactInformation a{
+    color: white;
+   
+}
+
+#leeTitle{
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
+    padding-bottom:3px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#address{
+    margin-top: 35px;
+}
+
+#logos{  
+    text-align: center;
+}
+
+#logos img{
+    margin-top: 40px;
+    
+}
+
+#logos img:first-child{
+    margin-right: 40px;
+}
