@@ -18,7 +18,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-site" data-offset="195">
-
+<div id="skrollr-body">
     <nav 
         id="navbar-site" 
         class="navbar navbar-light fixed-top navbar-expand-lg"
@@ -58,7 +58,7 @@
             </div>
         </div>
     </nav>
-<div id="skrollr-body">
+
     <div class="container-fluid">
         
         <div class="row">
@@ -226,6 +226,11 @@
         if (s.isMobile()) {
             s.destroy();
             $("#header").css('background-position', '50% 50%');
+            $("#navbar-site").addClass('navbar navbar-dark fixed-top navbar-expand-lg bgcol');
+            $("#home").addClass('navbar-brand ml-5 mt-2 effect smallLeftLogo');
+            $("#logo").addClass('logoChange');
+
+
         }
     //     $(function () {
     // $(window).scroll(function () {
