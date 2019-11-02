@@ -3,11 +3,7 @@ html,body {
   font-family: 'Roboto Slab', serif;
 }
 
-#skrollr-body {
-    float: left;
-    width: 100%;
-    height: 100%;
-}
+
 
 #logo{
     width: 65%;
@@ -25,13 +21,18 @@ html,body {
     background-attachment: fixed;
 }
 
-#firmContent {
+#firm {
    
     background-size:cover;
     background-position: center center;
     background-image:url("../img/toronto_edited.jpg");
     background-attachment: fixed;
     
+}
+
+#firmTitle{
+    background-color: white;
+    overflow: auto;
 }
 
 .titleStyle{

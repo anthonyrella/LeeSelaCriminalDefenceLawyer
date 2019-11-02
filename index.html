@@ -18,7 +18,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-site" data-offset="195">
-<div id="skrollr-body">
+    
     <nav 
         id="navbar-site" 
         class="navbar navbar-light fixed-top navbar-expand-lg"
@@ -26,7 +26,7 @@
         data-80-top-bottom="@class: navbar navbar-dark fixed-top navbar-expand-lg bgcol" 
         data-anchor-target="#header">
 
-        <div class="container-fluid">
+        
             <a href="#" class="navbar-brand ml-5 mt-2" 
                 data-bottom-top="@class: navbar-brand ml-5 mt-2 smallLeftLogo"
                 data-80-top-bottom="@class:navbar-brand ml-5 mt-2 effect smallLeftLogo" 
@@ -56,9 +56,9 @@
                     <a class="nav-item nav-link" href="tel:416 707 5859"><i class="fas fa-phone-alt"></i> 416 707 5859</a>
                 </div>
             </div>
-        </div>
+       
     </nav>
-
+       
     <div class="container-fluid">
         
         <div class="row">
@@ -95,7 +95,9 @@
             <section class="col-12 p-0" id="firm">
 
                 <div class="container-fluid p-0">
-                    <h1 class="contentMarginAdjust">The Firm</h1>
+                    <div id="firmTitle">
+                        <h1 class="contentMarginAdjust">The Firm</h1>
+                    </div>
                     <div class="titleStyle"></div>
                     <div class="row" id="firmContent">
 
@@ -109,9 +111,8 @@
                             Lee believes in providing access to justice as well as not crippling you financially during your time of need. She advocates zealously for her clients, yet leaves all judgment for the judge or jury.
                     
                         </div>
-                        <div class="col-md-6">
-
-                        </div>
+                        <div class="col-md-6"></div>
+                        
                     </div>
 
                 </div>
@@ -175,7 +176,7 @@
                     <h1 class="contentMarginAdjust">Contact</h1>
                     <div class="titleStyle"></div>
     
-                        <div class="row contentMarginAdjust">
+                        <div class="row contentMarginAdjust" id="mapAndContent">
                             <div class="col-md-6" id="contactInformation">
 
                                 <div>Lee Sela, Criminal Defence Lawyer</div> 
@@ -185,7 +186,7 @@
                                 <div>Phone: <a href="tel:416 707 5859"> 416 707 5859</a></div>
                                
                                 <div>Email: <a href="mailto:lee@selalaw.com">lee@selalaw.com</a></div>
-                                
+                                <br>
                             </div>
                             <div class="col-md-6" id="googleMap">
                                 <div class="embed-responsive embed-responsive-4by3">
@@ -211,7 +212,7 @@
 
         </footer> -->
     </div>
- </div>
+ 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -226,9 +227,12 @@
         if (s.isMobile()) {
             s.destroy();
             $("#header").css('background-position', '50% 50%');
-            $("#navbar-site").addClass('navbar navbar-dark fixed-top navbar-expand-lg bgcol');
+            $("#navbar-site").addClass('navbar navbar-dark fixed-top navbar-expand-lg bgcol').css('width', '96%');
             $("#home").addClass('navbar-brand ml-5 mt-2 effect smallLeftLogo');
             $("#logo").addClass('logoChange');
+            $("#leeTitle").hide();
+            $("#contactInformation").css('font-size', '16px');
+            $('#mapAndContent').removeClass('contentMarginAdjust');
 
 
         }
