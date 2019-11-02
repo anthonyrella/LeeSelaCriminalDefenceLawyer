@@ -58,9 +58,9 @@
             </div>
         </div>
     </nav>
-    <span id="skrollr-body"></span>
+<div id="skrollr-body">
     <div class="container-fluid">
-
+        
         <div class="row">
             <section 
                 class="col-12" id="header" 
@@ -117,6 +117,7 @@
                 </div>
             </section>
         </div>
+        
         <div class="row">
             <section class="col-12 px-0" id="practiceAreas">
                 <div class="container-fluid p-0">
@@ -202,7 +203,7 @@
 
             </section>
         </div>
-
+       
         <!-- <footer class="text-center">
             <a class="up-arrow" href="#" data-toggle="tooltip" title="Back To Top">
                 <span class="fa fa-chevron-up"></span>
@@ -210,7 +211,7 @@
 
         </footer> -->
     </div>
-
+ </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -222,6 +223,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script type="text/javascript">
         var s = skrollr.init();
+        if (s.isMobile()) {
+            s.destroy();
+            $("#header").css('background-position', '50% 50%');
+        }
     //     $(function () {
     // $(window).scroll(function () {
     //     if ($(this).scrollTop() < 800) { 
