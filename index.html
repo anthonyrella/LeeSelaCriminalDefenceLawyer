@@ -195,14 +195,12 @@
         var s = skrollr.init();
         if (s.isMobile()) {
             s.destroy();
-            $("#header").css('background-position', '50% 50%');
             $("#navbar-site").addClass('navbar navbar-dark fixed-top navbar-expand-lg bgcol');
             $("#home").addClass('navbar-brand ml-5 mt-2 effect smallLeftLogo');
             $("#logo").addClass('logoChange');
             $("#leeTitle").hide();
             $("#contactInformation").css('font-size', '16px');
             $('#mapAndContent').removeClass('contentMarginAdjust');
-            $('#theFirmContent').removeClass('contentMarginAdjust').addClass('contentMarginAdjustMobile');
             $('#googleMap').addClass('pr-0');
         }
     </script>

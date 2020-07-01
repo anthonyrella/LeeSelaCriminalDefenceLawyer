@@ -19,6 +19,7 @@ html,body {
     background-size:cover;
     background-image:url("../img/IMG_0729.jpeg");
     background-attachment: fixed;
+    background-position: 50% 50%;
 }
 
 #firm {
@@ -28,6 +29,19 @@ html,body {
     background-image:url("../img/toronto_edited.jpg");
     background-attachment: fixed;
     
+}
+
+/* changes to support iOS safari */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ 
+    #firm {
+   
+        background-size:cover;
+        background-position: center center;
+        background-image:url("../img/toronto_edited.jpg");
+        background-attachment: local;
+        
+    }
 }
 
 #firmTitle{
@@ -42,8 +56,6 @@ html,body {
     display:flex;
     align-items: center;
     justify-content: center;
-    /* color: white; */
-    /* background-size:cover; */
  
   }
 
@@ -92,6 +104,15 @@ h2{
         left: 36px; 
         margin:auto !important;    
     }
+
+    #theFirmContent{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+        font-size: 14px;
+    }
+    
 }
 
 #navbar-site{
