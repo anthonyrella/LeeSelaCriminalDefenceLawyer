@@ -6,10 +6,11 @@ html,body {
 
 
 #logo{
-    width: 65%;
+    width: 62%;
+    margin-right: 20px;
 }
 .logoChange{
-    width: 65%;
+    width: 62%;
     content:url("../img/logoWhite.png");
 }
 

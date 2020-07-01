@@ -2,8 +2,6 @@ $(document).ready(function () {
 
     $(function () {
 
-        var topoffset = 90; //variable for menu height
-
         //Use smooth scrolling when clicking on navigation
         $('.navbar-nav a').click(function () {
             if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
@@ -12,16 +10,32 @@ $(document).ready(function () {
 
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
-                if (target.length) {
+                if (target[0].id !== "firm") {
+                    if (target.length) {
 
-                    $('html,body').animate({
+                        $('html,body').animate({
+    
+                            scrollTop: target.offset().top - 60
+    
+                        }, 700);
+    
+                        return false;
+                    } //target.length
+                }
+                else {
+                    if (target.length) {
 
-                        scrollTop: target.offset().top - topoffset
+                        $('html,body').animate({
+    
+                            scrollTop: target.offset().top - 90
+    
+                        }, 700);
+    
+                        return false;
+                    } //target.length
+                }
 
-                    }, 700);
-
-                    return false;
-                } //target.length
+                
             } //click function
         }); //smooth scrolling
 
