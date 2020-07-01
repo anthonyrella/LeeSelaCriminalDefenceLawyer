@@ -20,6 +20,8 @@ html,body {
     background-image:url("../img/IMG_0729.jpeg");
     background-attachment: fixed;
     background-position: 50% 50%;
+    max-height: 100vh;
+    overflow-y: scroll;
 }
 
 #firm {
@@ -28,6 +30,8 @@ html,body {
     background-position: center center;
     background-image:url("../img/toronto_edited.jpg");
     background-attachment: fixed;
+    max-height: 100vh;
+    overflow-y: scroll;
     
 }
 
@@ -40,6 +44,8 @@ html,body {
         background-position: center center;
         background-image:url("../img/toronto_edited.jpg");
         background-attachment: local;
+        max-height: 100vh;
+        overflow-y: scroll;
         
     }
 }
