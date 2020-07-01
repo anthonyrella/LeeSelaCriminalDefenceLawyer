@@ -21,6 +21,7 @@ html,body {
     background-attachment: fixed;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    overflow: hidden
 
 }
 
@@ -31,6 +32,7 @@ html,body {
     background-image:url("../img/toronto_edited.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    overflow: hidden
     
 }
 
@@ -44,7 +46,7 @@ html,body {
         background-image:url("../img/toronto_edited.jpg");
         background-attachment: local;
         background-repeat: no-repeat;
-        
+        overflow: hidden
     }
 }
 
