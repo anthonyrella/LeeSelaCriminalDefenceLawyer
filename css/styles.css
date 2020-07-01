@@ -14,25 +14,30 @@ html,body {
 }
 
 #header {
-    height:84vh;
+    height:84vh; 
     min-height:400px;
     background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-image:url("../img/IMG_0729.jpeg");
     background-attachment: fixed;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    overflow: hidden
 
 }
 
 #firm {
    
     background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: center center;
     background-image:url("../img/toronto_edited.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    overflow: hidden
+  
     
 }
 
@@ -42,11 +47,14 @@ html,body {
     #firm {
    
         background-size:cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-position: center center;
         background-image:url("../img/toronto_edited.jpg");
         background-attachment: local;
         background-repeat: no-repeat;
-        overflow: hidden
+   
     }
 }
 
